@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByHana REFORMER – Pilates studio | Zlín</title>
+  <meta name="description" content="Pilates studio ByHana REFORMER – reformer, skupinové i individuální lekce. Rezervujte si lekci ve Zlíně." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="/src/main.js" type="module"></script>
+</head>
+<body class="bg-cream-50 text-brown-900 antialiased">
+  <div id="page-loader" aria-live="polite" aria-label="Načítání">
+    <svg class="loader-reformer" viewBox="0 0 160 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path class="reformer-frame" d="M12 28h136a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4z" />
+      <line class="reformer-spring" x1="28" y1="32" x2="28" y2="20" />
+      <line class="reformer-spring" x1="132" y1="32" x2="132" y2="20" />
+      <rect class="reformer-carriage" x="54" y="18" width="52" height="24" />
+    </svg>
+    <p class="text-sm text-brown-600 font-medium">Načítám…</p>
+  </div>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-cream-100/95 backdrop-blur-sm border-b border-brown-600/20">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-xl text-brown-800">ByHana REFORMER</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-brown-800 font-semibold">Úvod</a>
+        <a href="lekce.html" class="nav-link text-brown-700 hover:text-brown-900 transition">Lekce</a>
+        <a href="cenik.html" class="nav-link text-brown-700 hover:text-brown-900 transition">Ceník</a>
+        <div class="flex items-center gap-2">
+          <a href="tel:+420123456789" class="flex items-center justify-center p-2.5 border border-brown-600/30 text-brown-800 rounded-full font-medium hover:bg-brown-100 transition" aria-label="Zavolat">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-2.5 border border-brown-600/30 text-brown-800 rounded-full font-medium hover:bg-brown-100 transition" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="rezervace.html" class="bg-gold-400 text-brown-900 px-4 py-2 rounded-full font-medium hover:bg-gold-500 transition">Rezervace</a>
+        </div>
+      </div>
+      <button id="menu-toggle" type="button" class="md:hidden p-2 text-brown-800" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-cream-100 border-t border-brown-600/20 px-4 py-4" role="region" aria-label="Navigace">
+      <a href="index.html" class="block py-2 text-brown-800 font-semibold">Úvod</a>
+      <a href="lekce.html" class="block py-2 text-brown-700">Lekce</a>
+      <a href="cenik.html" class="block py-2 text-brown-700">Ceník</a>
+      <a href="tel:+420123456789" class="flex items-center justify-center p-2 text-brown-700" aria-label="Zavolat"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></a>
+      <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-2 text-brown-700" aria-label="Instagram"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg></a>
+      <a href="rezervace.html" class="block py-2 text-gold-600 font-medium">Rezervace</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="min-h-[70vh] flex items-center justify-center px-4 pt-24 pb-16 bg-gradient-to-br from-brown-900 via-brown-700 to-brown-600 text-cream-100 hero-bg-image">
+      <div class="max-w-4xl mx-auto text-center hero-content">
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream-100 mb-4">ByHana REFORMER</h1>
+        <p class="text-xl md:text-2xl text-gold-300 mb-8">Pilates na reformeru – síla, pružnost, rovnováha</p>
+        <a href="rezervace.html" class="inline-block bg-gold-400 text-brown-900 px-8 py-3 rounded-full font-semibold hover:bg-gold-500 transition btn-primary">Rezervovat lekci</a>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="section-title animate-on-scroll">Co nabízíme</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="rounded-2xl bg-white border border-brown-600/10 overflow-hidden shadow-sm card-hover animate-on-scroll">
+            <div class="aspect-[4/3] bg-cream-200 relative card-img-wrap">
+              <img src="/images/reformer.jpg" alt="Reformer – přístrojový Pilates" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 lg:p-8">
+              <h3 class="font-display text-xl font-semibold text-brown-800 mb-2">Reformer</h3>
+              <p class="text-brown-700">Lekce na reformeru – přístrojový Pilates pro posílení celého těla, protažení a správné držení.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white border border-brown-600/10 overflow-hidden shadow-sm card-hover animate-on-scroll">
+            <div class="aspect-[4/3] bg-cream-200 relative card-img-wrap">
+              <img src="/images/skupinove.jpg" alt="Skupinové lekce Pilates" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 lg:p-8">
+              <h3 class="font-display text-xl font-semibold text-brown-800 mb-2">Skupinové lekce</h3>
+              <p class="text-brown-700">Malé skupiny (max 4–6 osob), individuální přístup a příjemná atmosféra.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white border border-brown-600/10 overflow-hidden shadow-sm card-hover animate-on-scroll">
+            <div class="aspect-[4/3] bg-cream-200 relative card-img-wrap">
+              <img src="/images/individualni.jpg" alt="Individuální lekce" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 lg:p-8">
+              <h3 class="font-display text-xl font-semibold text-brown-800 mb-2">Individuální lekce</h3>
+              <p class="text-brown-700">Lekce na míru – vhodné pro začátečníky i pokročilé, rehabilitace i kondici.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-cream-100">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="section-title animate-on-scroll">Kdo jsem</h2>
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div class="aspect-[3/4] max-h-[480px] rounded-2xl overflow-hidden bg-cream-200 shadow-md order-2 lg:order-1 gallery-img-wrap animate-on-scroll">
+            <img src="/images/hana.jpg" alt="Hana – zakladatelka a lektorka ByHana REFORMER" class="w-full h-full object-cover" />
+          </div>
+          <div class="order-1 lg:order-2">
+            <p class="font-display text-lg text-brown-800 mb-4">Jmenuji se Hana, jsem zakladatelkou a lektorkou studia <strong>ByHana · Reformer</strong>.</p>
+            <p class="text-brown-700 mb-4">Pohyb byl vždy mou přirozeností. Studium sportu, aktivní život a dlouhodobé hledání rovnováhy mezi silou a lehkostí formovaly mou cestu.</p>
+            <p class="text-brown-700 mb-4">Pilates reformer mě okouzlil už před mnoha lety v Turecku a od té chvíle se ve mně zrodila touha vytvořit vlastní prostor.</p>
+            <p class="text-brown-700 mb-4">Vzniká místo, kde se prolíná elegance, klid, příjemná atmosféra a vědomý pohyb.<br />Prostor vytvořený ze srdce s respektem pro detail, kvalitu a skutečný prožitek.</p>
+            <p class="text-brown-800 font-medium italic">Osobní. Autentické. Nadčasové.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="section-title animate-on-scroll">Prostředí studia</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-cream-200 shadow-sm gallery-img-wrap animate-on-scroll">
+            <img src="/images/prostredi-1.jpg" alt="Prostředí studia ByHana REFORMER" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-cream-200 shadow-sm gallery-img-wrap animate-on-scroll">
+            <img src="/images/prostredi-2.jpg" alt="Interiér pilates studia" class="w-full h-full object-cover" />
+          </div>
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-cream-200 shadow-sm sm:col-span-2 lg:col-span-1 gallery-img-wrap animate-on-scroll">
+            <img src="/images/prostredi-3.jpg" alt="Reformer a vybavení studia" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-cream-100">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="section-title mb-10">Kde nás najdete</h2>
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div class="order-2 lg:order-1 text-center lg:text-left">
+            <p class="text-lg text-brown-700 mb-4"><strong>ByHana REFORMER</strong><br />Bartošova<br />760 01 Zlín 1</p>
+            <p class="text-brown-600">MHD: tramvaj X, Y – zastávka Náměstí<br />Parkování: placené zóny v okolí, doporučujeme MHD.</p>
+            <p class="mt-6 text-brown-700">Otevírací doba dle rozvrhu lekcí. Rezervace předem nutná.</p>
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start mt-8">
+              <a href="tel:+420123456789" class="inline-flex items-center justify-center p-3 border border-brown-600/30 text-brown-800 rounded-full font-medium hover:bg-brown-100 transition" aria-label="Zavolat">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center p-3 border border-brown-600/30 text-brown-800 rounded-full font-medium hover:bg-brown-100 transition" aria-label="Instagram">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg>
+              </a>
+              <a href="rezervace.html" class="inline-block bg-gold-400 text-brown-900 px-6 py-2 rounded-full font-medium hover:bg-gold-500 transition btn-primary">Rezervovat</a>
+            </div>
+          </div>
+          <!-- Mapa: na maps.google.com vyhledejte „Bartošova, Zlín“ → Sdílet → Vložit mapu → zkopírujte odkaz ze src iframe sem -->
+          <div class="order-1 lg:order-2 aspect-[4/3] min-h-[280px] rounded-2xl overflow-hidden border border-brown-600/10 shadow-md bg-cream-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.074776755!2d14.420415!3d50.087811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c3b238b4b%3A0x3c44f2e46c2c2c2c!2s110%2000%20Praha%201!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+              width="100%"
+              height="100%"
+              style="border:0; min-height: 280px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa – ByHana REFORMER, Zlín 1">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brown-900 text-cream-200 py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <p>© ByHana REFORMER – Pilates studio</p>
+      <div class="flex items-center gap-4">
+        <a href="tel:+420123456789" class="text-cream-200 hover:text-gold-300 transition" aria-label="Zavolat">Zavolat</a>
+        <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="text-cream-200 hover:text-gold-300 transition" aria-label="Instagram">Instagram</a>
+        <a href="rezervace.html" class="text-gold-300 hover:text-gold-200 transition">Rezervace</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
