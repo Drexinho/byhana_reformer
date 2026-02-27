@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ceník – ByHana REFORMER | Pilates studio</title>
+  <meta name="description" content="Ceník lekcí Pilates na reformeru – jednorázové lekce a permanentky. ByHana REFORMER, Zlín." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Outfit", "system-ui", "sans-serif"],
+            display: ["Fraunces", "Georgia", "serif"],
+          },
+          colors: {
+            cream: { 50: "#FFFBF7", 100: "#FFEDD8", 200: "#F5E0C8", 300: "#E8D0B8" },
+            gold: { 300: "#F8E4A8", 400: "#F3D585", 500: "#E8C96A", 600: "#D4B85A" },
+            brown: { 500: "#C99A6E", 600: "#BC8A5F", 700: "#A67B50", 800: "#7B5A3D", 900: "#6B4E2E" },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body class="bg-cream-50 text-brown-900 antialiased">
+  <div id="page-loader" aria-live="polite" aria-label="Načítání">
+    <svg class="loader-reformer" viewBox="0 0 160 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path class="reformer-frame" d="M12 28h136a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4z" />
+      <line class="reformer-spring" x1="28" y1="32" x2="28" y2="20" />
+      <line class="reformer-spring" x1="132" y1="32" x2="132" y2="20" />
+      <rect class="reformer-carriage" x="54" y="18" width="52" height="24" />
+    </svg>
+    <p class="text-sm text-brown-600 font-medium">Načítám…</p>
+  </div>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-cream-100/95 backdrop-blur-sm border-b border-brown-600/20">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center shrink-0" aria-label="ByHana REFORMER – úvod">
+        <img src="images/logo.png" alt="ByHana REFORMER" class="h-8 md:h-10 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/" class="nav-link text-brown-700 hover:text-brown-900 transition">Úvod</a>
+        <a href="lekce.html" class="nav-link text-brown-700 hover:text-brown-900 transition">Lekce</a>
+        <a href="cenik.html" class="nav-link text-brown-800 font-semibold">Ceník</a>
+        <a href="kontakt.html" class="nav-link text-brown-700 hover:text-brown-900 transition">Kontakt</a>
+        <a href="faq.html" class="nav-link text-brown-700 hover:text-brown-900 transition">Q/A</a>
+        <div class="flex items-center gap-2">
+          <a href="tel:+420123456789" class="flex items-center justify-center p-2.5 border border-brown-600/30 text-brown-800 rounded-full font-medium hover:bg-brown-100 transition" aria-label="Zavolat">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-2.5 border border-brown-600/30 text-brown-800 rounded-full font-medium hover:bg-brown-100 transition" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="rezervace.html" class="bg-cream-200 text-brown-800 border border-brown-800 px-4 py-2 rounded-full font-medium hover:bg-cream-300 transition">Rezervace</a>
+        </div>
+      </div>
+      <button id="menu-toggle" type="button" class="md:hidden p-2 text-brown-800" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-cream-100 border-t border-brown-600/20 px-4 py-4 flex flex-col items-center text-center" role="region" aria-label="Navigace">
+      <a href="/" class="block py-2 text-brown-700">Úvod</a>
+      <a href="lekce.html" class="block py-2 text-brown-700">Lekce</a>
+      <a href="cenik.html" class="block py-2 text-brown-800 font-semibold">Ceník</a>
+      <a href="kontakt.html" class="block py-2 text-brown-700">Kontakt</a>
+      <a href="faq.html" class="block py-2 text-brown-700">Q/A</a>
+      <a href="tel:+420123456789" class="flex items-center justify-center p-2 text-brown-700" aria-label="Zavolat"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></a>
+      <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-2 text-brown-700" aria-label="Instagram"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg></a>
+      <a href="rezervace.html" class="block py-2 text-gold-600 font-medium">Rezervace</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16">
+    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto">
+        <h1 class="section-title mb-4">Ceník</h1>
+        <p class="text-brown-600 text-center mb-2">Platný od 1. 3. 2026</p>
+        <p class="text-brown-600 text-center mb-8">Délka lekce: 55 minut. Rezervaci je možné zrušit nejpozději 12 hodin před začátkem, jinak lekce propadá.</p>
+
+        <div class="rounded-2xl bg-white border border-brown-600/10 shadow-sm overflow-hidden mb-8">
+          <table class="w-full text-left text-brown-800">
+            <thead class="bg-cream-200/80">
+              <tr>
+                <th class="px-6 py-4 font-display font-semibold">Služba</th>
+                <th class="px-6 py-4 font-display font-semibold text-right">Cena</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-brown-600/10">
+              <tr><td class="px-6 py-4 text-brown-700">Skupinová lekce (3 osoby)</td><td class="px-6 py-4 text-right font-medium">550 Kč / osoba</td></tr>
+              <tr><td class="px-6 py-4 text-brown-700">Permanentka – 5 vstupů (skupinové lekce)</td><td class="px-6 py-4 text-right font-medium">2 500 Kč</td></tr>
+              <tr><td class="px-6 py-4 text-brown-700">Permanentka – 10 vstupů (skupinové lekce)</td><td class="px-6 py-4 text-right font-medium">4 500 Kč</td></tr>
+              <tr><td class="px-6 py-4 text-brown-700">Private training (1 osoba)</td><td class="px-6 py-4 text-right font-medium">1 000 Kč</td></tr>
+              <tr><td class="px-6 py-4 text-brown-700">Private DUO training (2 osoby)</td><td class="px-6 py-4 text-right font-medium">1 400 Kč / celkem</td></tr>
+              <tr><td class="px-6 py-4 text-brown-700">Reformer Barre (3 osoby)</td><td class="px-6 py-4 text-right font-medium">550 Kč / osoba</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center">
+          <a href="rezervace.html" class="inline-block bg-cream-200 text-brown-800 border border-brown-800 px-6 py-2 rounded-full font-medium hover:bg-cream-300 transition btn-primary">Rezervace</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brown-900 text-cream-200 py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <p>© ByHana REFORMER – Pilates studio</p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="kontakt.html" class="text-cream-200 hover:text-gold-300 transition">Kontakt</a>
+        <a href="tel:+420123456789" class="text-cream-200 hover:text-gold-300 transition">Zavolat</a>
+        <a href="https://www.instagram.com/p/DTr10f0DaJA/" target="_blank" rel="noopener noreferrer" class="text-cream-200 hover:text-gold-300 transition">Instagram</a>
+        <a href="rezervace.html" class="text-cream-200 hover:text-gold-300 transition">Rezervace</a>
+        <a href="faq.html" class="text-cream-200 hover:text-gold-300 transition">Q/A</a>
+        <a href="provozni-rad.html" class="text-cream-200 hover:text-gold-300 transition">Provozní řád</a>
+        <a href="obchodni-podminky.html" class="text-cream-200 hover:text-gold-300 transition">Obchodní podmínky a ochrana údajů</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

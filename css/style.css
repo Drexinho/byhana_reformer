@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero */
+.hero-bg-image {
+  background-image: linear-gradient(to bottom, rgba(107, 78, 46, 0.4), rgba(107, 78, 46, 0.6)), url('/images/hero-pilates.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-pan {
+  object-fit: cover;
+  object-position: 50% 50%;
+  animation: heroPanSubtle 16s linear infinite;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes heroPanSubtle {
+  0%   { object-position: 50% 50%; }
+  20%  { object-position: 49% 51%; }
+  40%  { object-position: 51% 49%; }
+  60%  { object-position: 49% 49%; }
+  80%  { object-position: 51% 51%; }
+  100% { object-position: 50% 50%; }
+}
+
+.hero-content {
+  animation: fadeInUp 0.9s ease-out forwards;
+}
+
+/* Sekční nadpisy */
+.section-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #5C4033;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 0.125rem;
+  background-color: #D4B85A;
+  margin: 1rem auto 0;
+  border-radius: 9999px;
+}
+
+/* Karty */
+.card-hover {
+  transition: all 0.3s;
+}
+.card-hover:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+.card-hover .card-img-wrap {
+  overflow: hidden;
+}
+.card-hover .card-img-wrap img {
+  transition: transform 0.5s ease-out;
+}
+.card-hover:hover .card-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* Galerie */
+.gallery-img-wrap {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.gallery-img-wrap img {
+  transition: transform 0.5s ease-out;
+}
+.gallery-img-wrap:hover img {
+  transform: scale(1.05);
+}
+
+/* Tlačítka */
+.btn-primary {
+  transition: all 0.2s;
+}
+.btn-primary:hover {
+  transform: scale(1.02);
+}
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Navigace */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.125rem;
+  background-color: #D4B85A;
+  transition: all 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Animace při scrollu */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Formulář */
+#reservation-form input,
+#reservation-form select,
+#reservation-form textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Loading overlay */
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #FFFBF7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+}
+#page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-reformer {
+  width: 160px;
+  height: 56px;
+}
+
+.loader-reformer .reformer-frame {
+  fill: none;
+  stroke: #BC8A5F;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.loader-reformer .reformer-carriage {
+  fill: #E8D0B8;
+  stroke: #A67B50;
+  stroke-width: 1.5;
+  rx: 3;
+  animation: reformer-slide 1.8s ease-in-out infinite;
+}
+
+.loader-reformer .reformer-spring {
+  stroke: #D4B85A;
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+  opacity: 0.9;
+}
+
+@keyframes reformer-slide {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(52px); }
+}
+
+/* Hero slideshow */
+.hero-slide {
+  animation: heroFade 16s ease-in-out infinite;
+}
+.hero-slide-1 { 
+  opacity: 1;
+  animation-name: heroFade1;
+}
+.hero-slide-2 { 
+  opacity: 0;
+  animation-name: heroFade2;
+}
+@keyframes heroFade1 {
+  0%, 46% { opacity: 1; }
+  50%, 96% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes heroFade2 {
+  0%, 46% { opacity: 0; }
+  50%, 96% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
