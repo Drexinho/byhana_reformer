@@ -225,3 +225,48 @@ html {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Mobilní zobrazení – sjednocený vzhled */
+@media (max-width: 767px) {
+  #mobile-menu {
+    padding: 1.25rem 1rem 1.75rem;
+  }
+  #mobile-menu a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  #mobile-menu a:hover {
+    background-color: rgba(188, 138, 95, 0.08);
+  }
+  #mobile-menu a[aria-label="Instagram"] {
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+    margin: 0.25rem auto;
+  }
+  .section-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  /* Patička na mobilu – přehledné řádkování */
+  footer .flex {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  footer .flex-wrap {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  /* Skupiny tlačítek na mobilu pod sebou, šířka dle obsahu */
+  .flex-wrap.gap-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-wrap.gap-3 a {
+    width: auto;
+  }
+}
